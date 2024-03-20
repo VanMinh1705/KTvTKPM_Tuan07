@@ -23,25 +23,25 @@ public class StudentController {
 			return "Hello student";
 		}
 		
-//		@Autowired
-//	    private StudentService dao;
-//
-//	    @PostMapping("/save")
-//	    public Student save(@RequestBody Student student) {
-//	        return dao.save(student);
-//	    }
-//
-//	    @GetMapping("/findAll")
-//	    public List<Student> getAllStudents() {
-//	        return dao.findAll();
-//	    }
-//
-//	    @GetMapping("findStudentById/{id}")
-//	    public Student findStudent(@PathVariable int id) {
-//	        return dao.findStudentById(id);
-//	    }
-//	    @DeleteMapping("delete/{id}")
-//	    public String remove(@PathVariable int id)   {
-//	    	return dao.delete(id);
-//		}
+			@Autowired
+		    private StudentService dao;
+	
+		    @PostMapping("/save")
+		    public Student save(@RequestBody Student student) {
+		        return dao.save(student);
+		    }
+	
+		    @GetMapping("/findAll")
+		    public List<Student> getAllStudents() {
+		        return dao.findAll();
+		    }
+	
+		    @GetMapping("findStudentById/{id}")
+		    public Student findStudent(@PathVariable int id) {
+		        return dao.findStudentById(id);
+		    }
+		    @DeleteMapping("delete/{id}")
+		    public String remove(@PathVariable int id)   {
+		    	return dao.delete(id);
+			}
 }
