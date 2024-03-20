@@ -29,9 +29,9 @@ public class StudentServiceImpl implements StudentService{
 	}
 
 	@Override
-	public Student findOrderById(int id) {
+	public Student findStudentById(int id) {
 		// TODO Auto-generated method stub
-		return dao.findOrderById(id);
+		return dao.findStudentById(id);
 	}
 
 	@Override
